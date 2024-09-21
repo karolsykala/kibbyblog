@@ -14,14 +14,13 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
+  title: Kibby Blog
   description: "ExampleSite description"
-  keywords: [Blog, Portfolio, PaperMod]
-  author: Me
-  # author: ["Me", "You"] # multiple authors
+  keywords: [Homelab, Blog, Portfolio, PaperMod]
+  author: mlem_dev
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
+  defaultTheme: dark
   disableThemeToggle: false
 
   ShowReadingTime: true
@@ -56,9 +55,9 @@ params:
 
   # profile-mode
   profileMode:
-    enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
+    enabled: true # needs to be explicitly set
+    title: Hi :3
+    subtitle: "Welcome to my happy place, where I share my ideas and cat pictures"
     imageUrl: "<img location>"
     imageWidth: 120
     imageHeight: 120
@@ -77,10 +76,10 @@ params:
   socialIcons:
     - name: x
       url: "https://x.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
     - name: github
       url: "https://github.com/"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/karolsykala/"
 
   analytics:
     google:
