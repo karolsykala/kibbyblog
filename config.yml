@@ -1,7 +1,7 @@
-baseURL: "https://examplesite.com/"
-title: ExampleSite
-paginate: 5
-theme: PaperMod
+baseURL: https://example.org/
+languageCode: en-us
+title: Kibby blog
+theme: ["PaperMod"]
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -14,15 +14,14 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
+  title: Kibby Blog
   description: "ExampleSite description"
-  keywords: [Blog, Portfolio, PaperMod]
-  author: Me
-  # author: ["Me", "You"] # multiple authors
+  keywords: [Homelab, Blog, Portfolio, PaperMod]
+  author: mlem_dev
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
-  disableThemeToggle: false
+  defaultTheme: dark
+  disableThemeToggle: true
 
   ShowReadingTime: true
   ShowShareButtons: true
@@ -43,11 +42,11 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "cat-favicon.ico"
+    favicon16x16: "cat-favicon.ico"
+    favicon32x32: "cat-favicon.ico"
+    apple_touch_icon: "cat-favicon.ico"
+    safari_pinned_tab: "cat-favicon.ico"
 
   label:
     text: "Home"
@@ -56,13 +55,13 @@ params:
 
   # profile-mode
   profileMode:
-    enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
-    imageUrl: "<img location>"
+    enabled: true # needs to be explicitly set
+    title: Hi :3
+    subtitle: "Welcome to my happy place, where I share my ideas and cat pictures"
+    imageUrl: "me.jpeg"
     imageWidth: 120
     imageHeight: 120
-    imageTitle: my image
+    imageTitle: that's me I swear
     buttons:
       - name: Posts
         url: posts
@@ -71,16 +70,17 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
+    Title: "Hi there"
     Content: Welcome to my blog
 
   socialIcons:
-    - name: x
-      url: "https://x.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/karolsykala"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/karolsykala/"
+    - name: KoFi
+      title: Buy me a Ko-Fi :)
+      url: "https://ko-fi.com/mlem_dev"
 
   analytics:
     google:
@@ -96,7 +96,7 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/<path_to_repo>/content"
+    URL: "https://github.com/karolsykala/kibbyblog/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
@@ -117,14 +117,13 @@ menu:
       name: categories
       url: /categories/
       weight: 10
+    - identifier: projects
+      name: projects
+      url: https://github.com/karolsykala
     - identifier: tags
       name: tags
       url: /tags/
       weight: 20
-    - identifier: example
-      name: example.org
-      url: https://example.org
-      weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
@@ -134,4 +133,4 @@ markup:
     # codeFences: true
     # guessSyntax: true
     # lineNos: true
-    # style: monokai  
+    # style: monokai
