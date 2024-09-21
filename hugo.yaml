@@ -74,12 +74,13 @@ params:
     Content: Welcome to my blog
 
   socialIcons:
-    - name: x
-      url: "https://x.com/"
     - name: github
       url: "https://github.com/"
     - name: linkedin
       url: "https://www.linkedin.com/in/karolsykala/"
+    - name: KoFi
+      title: Buy me a Ko-Fi :)
+      url: "https://ko-fi.com/mlem_dev"
 
   analytics:
     google:
